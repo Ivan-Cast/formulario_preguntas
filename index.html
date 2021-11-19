@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href= "ins.css">
+  <link rel="stylesheet" href="stylef.css">
+  <title>Formulario Registro</title>
+</head>
+
+<body>
+
+  <section class="form-register">
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="text" name="edad" id="edad" placeholder="ingrese su edad">
+    <div class="form-group">
+        <p class="pregunta1">
+        ¿Cual es su pasatiempo Favorito?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Seleccionar una opcion</option>
+          <option value="challenges">Jugar xbox</option>
+          <option value="projects">Jugar Futbol</option>
+          <option value="community">Estudiar</option>
+          <option value="openSource">otros</option>
+          
+        </select>
+      </div>
+
+      <p class="pregunta1">
+        ¿Cual de estos lugares le gustaria conocer?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Paris</option>
+          <option value="challenges">Berlin</option>
+          <option value="projects">Rio de janeiro</option>
+          <option value="community">Honk Kong</option>
+          <option value="openSource">New York</option>
+        </select>
+      </div>
+
+      <p class="pregunta1">
+        ¿Cual es su deporte favorito?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Baloncesto</option>
+          <option value="challenges">Futbol</option>
+          <option value="projects">Tenis</option>
+          <option value="community">Voleyball</option>
+          <option value="openSource">baseball</option>
+        </select>
+      </div>
+
+      <p class="pregunta1">
+        ¿Que piensa hacer despues de culminar sus estudios?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Trabajar</option>
+          <option value="challenges">Estudiar</option>
+          <option value="projects">Montar su propio negocio</option>
+          <option value="community">No sabe No responde</option>
+          <option value="openSource">Ninguna de las anteriores</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>¿Cuentanos un pcoco mas de ti?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+  </section>
+  <script src="formulario.js"></script>
+</body>
+</html>
